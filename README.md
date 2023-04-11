@@ -1,4 +1,4 @@
-<h1 align ='center'><strong>Simple Photo Gallary ⚡</strong></h1>
+<h1 align ='center'><strong>Simple Photo Gallery ⚡</strong></h1>
 
 <p>Using Valilla Javascript to create a simple app.</p>
 
