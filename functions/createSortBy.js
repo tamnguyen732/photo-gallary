@@ -15,7 +15,7 @@ export default function createSortBy() {
     select.setAttribute("name", "dropdown");
     div.append(label, select);
     sortBy.map((item) => {
-      return (select.innerHTML += `<option class="sort-by" value=${item.toLocaleLowerCase()}>${item}</option>`);
+      return (select.innerHTML += `<option class="sort-item" value=${item.toLocaleLowerCase()}>${item}</option>`);
     });
     filterContainer.append(div);
   }

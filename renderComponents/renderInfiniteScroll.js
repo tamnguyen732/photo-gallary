@@ -9,7 +9,7 @@ export default async function renderInfinite({
   sort = "feature",
 }) {
   const options = {
-    rootMargin: "0px",
+    rootMargin: "10px",
     threshold: 1.0,
   };
 
@@ -24,7 +24,7 @@ export default async function renderInfinite({
   window.observer = new IntersectionObserver(async (entries) => {
     if (!isLoading && hasMore && entries[0].isIntersecting) {
       isLoading = true;
-
+      console.log(entries[0].isIntersecting);
       try {
         let response;
         if (value) {

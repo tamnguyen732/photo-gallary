@@ -13,11 +13,12 @@ function renderSearchImage() {
   });
 
   searchButton.addEventListener("click", async () => {
-    cardList.innerHTML = "";
-    if (query) {
-      renderInfinite({ query });
-      getValue({ query });
+    if (!query) {
+      return;
     }
+    cardList.innerHTML = "";
+    renderInfinite({ query });
+    getValue({ query });
   });
 }
 
